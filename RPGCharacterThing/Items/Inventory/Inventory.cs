@@ -10,7 +10,7 @@ namespace RPGCharacterThing.Items.Inventory
 
         public void AddItem(ItemStack item)
         {
-            if (!this.HasItem(item)) Contents.Add(item);
+            if (!this.HasItem(item.Item)) Contents.Add(item);
             else GetMatchingItemStack(item).Count += item.Count;
         }
 
